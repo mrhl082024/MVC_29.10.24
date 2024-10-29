@@ -14,6 +14,6 @@ public class Model
     //we override the ToString() method, to utilize it in the view class
     public override string ToString()
     {
-        return $"{Name}: {Age}:";
+        return $"Name:{Name} Age:{Age}";
     }
 }

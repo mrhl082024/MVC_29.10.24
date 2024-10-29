@@ -27,12 +27,17 @@ public class Controller
     }
     public void UpdateAge()
     {
+        //we parse the user input from ReadLine() as an integer, by taking a string input argument, and "getting" a new integer output newAge
         Console.WriteLine("Write a new age");
-        string? userInput = Console.ReadLine();
-        int.TryParse(in userInput out newAge)
+        if (int.TryParse(Console.ReadLine(), out int newAge))
         {
-            Console.WriteLine();
+            _model.Age = newAge;
         }
+    }
+
+    public void DisplayModel()
+    {
+        _view.Display(_model);
     }
 
 }
