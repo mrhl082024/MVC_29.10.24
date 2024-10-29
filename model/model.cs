@@ -16,4 +16,6 @@ public class Model
     {
         return $"Name:{Name} Age:{Age}";
     }
+    //TODO: verify that this actually does what we want it to, when View is implemented.
+
 }
