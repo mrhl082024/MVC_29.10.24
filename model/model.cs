@@ -1,10 +1,19 @@
 public class Model
 {
+    //two fields with getters and setters
     public string? Name { get; set; }
     public int? Age { get; set; }
 
-    public Model()
+    //constructor, that takes two parameters string name & int age
+    public Model(string name, int age)
     {
+        Name = name;
+        Age = age;
+    }
 
+    //we override the ToString() method, to utilize it in the view class
+    public override string ToString()
+    {
+        return $"{Name}: {Age}:";
     }
 }
